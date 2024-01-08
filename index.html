@@ -594,16 +594,16 @@
     <!-- Modal -->
 
     <div class="hero-backdrop is-open">
-      <div class="modal">
+      <div class="modal-window">
         <button
           class="modal-button-closer"
           type="button"
-          aria-label="modal close button">
-          <svg class="modal-icon" width="8" height="8">
+          aria-label="close button">
+          <svg class="button-closer-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-modal-icon"></use>
           </svg>
         </button>
-        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form" name="modal-form">
           <div class="modal-fild">
             <label class="modal-fild-label" for="user-name">Name</label>
@@ -653,21 +653,21 @@
               id="user-comment"
               name="user-comment"></textarea>
           </div>
-          <div class="accept-div">
+          <div class="modal-fild-accept">
             <input
               class="fild-accept visually-hidden"
               type="checkbox"
               id="user-privacy"
               value="true"
               name="user-privacy" />
-            <label class="modal-fild-label-accept" for="user-privacy"
+            <label class="modal-fild-accept-label" for="user-privacy"
               >I accept the terms and conditions of the
               <span class="accept-icon">
                 <svg class="icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              <a class="acept-link" href="">Privacy Policy</a>
+              <a class="accept-link" href="">Privacy Policy</a>
             </label>
           </div>
           <button class="hero-modalform-button" type="submit">Send</button>

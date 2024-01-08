@@ -240,7 +240,7 @@ img {
     pointer-events: none; */
 }
 
-.modal {
+.modal-window {
     border-radius: 4px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
@@ -279,11 +279,11 @@ img {
     border: none;
 }
 
-.modal-icon {
+.button-closer-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-text {
+.modal-title {
     color: #2E2F42;
     text-align: center;
     font-family: Roboto;
@@ -322,20 +322,6 @@ img {
     position: relative;
 }
 
-.fild-icon {
-    position: absolute;
-    fill: #2E2F42;
-    stroke: transparent;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input:focus+.fild-icon {
-    fill: #4D5AE5;
-}
-
 .input {
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
@@ -350,6 +336,22 @@ img {
 .input:focus {
     border-color: #4D5AE5;
 }
+
+.fild-icon {
+    position: absolute;
+    fill: #2E2F42;
+    stroke: transparent;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus+.fild-icon {
+    fill: #4D5AE5;
+}
+
+.modal-fild-comment {}
 
 .input-comment {
     border-radius: 4px;
@@ -369,6 +371,10 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.input-comment:focus {
+    border-color: #4D5AE5;
+}
+
 .input-comment::placeholder {
     color: rgba(46, 47, 66, 0.40);
     font-size: 12px;
@@ -377,34 +383,28 @@ img {
     letter-spacing: 0.04em;
 }
 
-.accept-div {
-    margin-bottom: 24px;
-}
-
-.input-comment:focus {
-    border-color: #4D5AE5;
-}
-
-.modal-fild-label-accept {
+.modal-fild-accept {
     display: block;
-    margin-top: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
+}
+
+.fild-accept {}
+
+
+.modal-fild-accept-label {
     color: #8E8F99;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
     user-select: none;
-
 }
 
-.fild-accept:checked+.accept-icon {
-    border-radius: 4px;
-    border-color: #404BBF;
-    background-color: #404bbf;
+.fild-accept:checked+.modal-fild-accept-label>.accept-icon {
+    background-color: #404BBF;
 }
 
-.fild-accept:checked+.accept-icon>.icon {
+.fild-accept:checked+.modal-fild-accept-label>.accept-icon>.icon {
     opacity: 1;
 }
 
@@ -416,38 +416,23 @@ img {
     height: 16px;
     stroke-width: 1px;
     stroke: rgba(46, 47, 66, 0.40);
+    border-radius: 4px;
     cursor: pointer;
-    margin-right: 8px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    fill: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
     opacity: 0;
 }
 
-.acept-link {
-    color: #4D5AE5;
-    font-size: 12px;
-    font-weight: 400;
+.accept-link {
     line-height: 16px;
-    letter-spacing: 0.04em;
+    color: #4D5AE5;
     text-decoration-line: underline;
-    transition: color 1s ease-in;
 }
 
-.acept-link:hover,
-.acept-link:focus {
-    color: #404BBF;
-}
+.accept-link:hover,
+.accept-link:focus {}
 
-.input-accept {}
-
-.input-accept-span {}
-
-.input-accept-acent {}
 
 .hero-modalform-button {
     border-radius: 4px;
