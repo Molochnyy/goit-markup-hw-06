@@ -403,6 +403,7 @@ img {
 .fild-accept:checked+.modal-fild-accept-label>.accept-icon {
     background-color: #404BBF;
     fill: #F4F4FD;
+    border: none;
 }
 
 .fild-accept:checked+.modal-fild-accept-label>.accept-icon>.icon {
