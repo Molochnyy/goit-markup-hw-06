@@ -232,12 +232,12 @@ img {
 }
 
 .hero-backdrop.is-open {
-    /* opacity: 1;
+    opacity: 1;
     visibility: visible;
-    pointer-events: initial;*/
-    opacity: 0;
+    pointer-events: initial;
+    /* opacity: 0;
     visibility: hidden;
-    pointer-events: none;
+    pointer-events: none; */
 }
 
 .modal-window {
@@ -293,6 +293,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     width: 360px;
+    margin-bottom: 16px;
 }
 
 .modal-fild {
